@@ -1,0 +1,51 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# Test/tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Local environment and secrets
+.env
+.env.*
+
+# RAG/runtime generated outputs
+.rag/
+indexes/*
+out/
+logs/
+scripts_log/
+
+# External documents (do not commit PDFs)
+data/*.pdf
+
+# Generated package docs/artifacts (local build inputs/outputs)
+generated/*
+!generated/.gitkeep
+
+# Local project notes/logs (do not commit)
+ARCHITECTURE_NOTE.md
+WORK_LOG.md
