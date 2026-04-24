@@ -78,6 +78,18 @@ Run:
 python3 scripts/refresh_knowledge_base.py --index-mode both
 ```
 
+This command regenerates `generated/symbols.jsonl` and
+`generated/API_REFERENCE.md` from your local `ore_algebra` clone, then builds
+the combined `both` index.
+
+After the command finishes, you should have:
+
+```text
+generated/symbols.jsonl
+generated/API_REFERENCE.md
+.rag/ore_algebra_both_index.json
+```
+
 Before running the command, make sure the default profile in
 [config/knowledge_base.json](config/knowledge_base.json) matches your local
 paths:

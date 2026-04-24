@@ -34,6 +34,9 @@ def _run(command: list[str]) -> None:
 
 def _copy_file(src: Path, dst: Path) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
+    if src.resolve() == dst.resolve():
+        print(f"already in place: {dst}")
+        return
     shutil.copy2(src, dst)
     print(f"synced {src} -> {dst}")
 
