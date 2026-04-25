@@ -28,13 +28,12 @@ convenient entrypoints.
 
 ## Requirements
 
-- Python 3.11+
+- Python 3.13
 - SageMath 10.0 with
   [`ore_algebra`](https://github.com/mkauers/ore_algebra) available in the Sage
   environment
-- a local [`ore_algebra`](https://github.com/mkauers/ore_algebra) clone
 
-This project is currently set up and tested against SageMath 10.0.
+This project is currently set up and tested against Python 3.13.12 and SageMath 10.0.
 
 ## Setup
 
@@ -115,6 +114,9 @@ Main chat UI:
 streamlit run streamlit_chat_app.py
 ```
 
+After it starts, open the Local URL shown in the terminal, usually
+`http://localhost:8501`, to use the web app.
+
 The public chat UI defaults to the combined `both` index. If you build a
 different index, change the `Index path` field in the sidebar.
 
@@ -124,6 +126,15 @@ or set it in your environment / `.env` file:
 - OpenAI: `OPENAI_API_KEY`
 - Gemini: `GEMINI_API_KEY` or `GOOGLE_API_KEY`
 - Ollama: no API key required, but a local Ollama server is needed
+
+For example, to add an OpenAI key to `.env`:
+
+```bash
+echo "OPENAI_API_KEY=your_key_here" >> .env
+```
+
+If `.env` already contains `OPENAI_API_KEY`, edit that line instead of adding
+a second one.
 
 Retrieval-only UI:
 
