@@ -69,3 +69,34 @@ issac26/texput.log
 # Local helper scripts
 scripts/push-public.sh
 scripts/download_ore_guide.sh
+
+# Development-only artifacts not shipped on public-release
+# Whole directories absent from public-release
+docs/
+evals/
+golden_traces/
+issac26/
+test_matrix/
+tests/
+tutor_upgrade/
+
+# Root-level development scripts
+end_to_end_eval.py
+narrative_extractor.py
+streamlit_test_workbench.py
+workflow_eval.py
+workflow_retrieval_eval.py
+workflow_routing_eval.py
+
+# Development-only files in shared directories
+config/end_to_end_cases.json
+config/workflow_cases.json
+config/workflow_retrieval_cases.json
+config/workflow_routing_cases.json
+data/PDF_SOURCE.txt
+scripts/build_symbol_example_inventories.py
+scripts/export_workflow_reports.py
+scripts/generate_test_matrix.py
+scripts/source_json_history.py
+workflows/workflow_cases.py
+workflows/workflow_validators.py
