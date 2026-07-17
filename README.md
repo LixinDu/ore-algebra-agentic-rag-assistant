@@ -3,6 +3,13 @@
 This repo provides a local Streamlit chat app for exploring `ore_algebra`
 documentation and generating retrieval-grounded answers/code.
 
+## Live Demo
+
+Try the public Hugging Face Space:
+[https://huggingface.co/spaces/LixinDu/ore-algebra-assistant](https://huggingface.co/spaces/LixinDu/ore-algebra-assistant)
+
+<img src="assets/hf_space_qr.png" alt="QR code for the ore_algebra assistant Hugging Face Space" width="180">
+
 ## Screenshot
 
 <img src="assets/streamlit-chat-ui.jpg" alt="ore_algebra Streamlit chat UI" width="900">
